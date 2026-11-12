@@ -1,0 +1,127 @@
+:root {
+    --V-Dark-Gray-Blue: hsl(217, 19%, 35%);
+    --Desat-Dark-Blue: hsl(214, 17%, 51%);
+    --Gray-Blue: hsl(212, 23%, 69%);
+    --L-Gray-Blue: hsl(210, 46%, 95%);
+    --White: hsl(0,0%,100%);
+    --Font: "Manrope", serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--Font);
+}
+
+body{
+    display: flex;
+    background-color: var(--L-Gray-Blue);
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.Img-Box {
+    width: 100%;
+}
+
+.Product-Img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 12.5rem;
+}
+
+.Text-Card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.Description {
+    font-size: 1.25rem;
+    color: var(--V-Dark-Gray-Blue);
+    font-weight: 700;
+    margin: 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.Paragraph {
+    font-size: 0.8125rem;
+    color: var(--Desat-Dark-Blue);
+    font-weight: 500;
+}
+
+.Identity-Banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Icon-Box {
+    display: flex;
+    overflow: hidden;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Author-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Name-Date-Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Author {
+    color: var(--V-Dark-Gray-Blue);
+    font-size: 0.8125rem;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.Date {
+    color: var(--Gray-Blue);
+    font-size: 0.8125rem;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.Share-Banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--V-Dark-Gray-Blue);
+    padding: 0rem 2rem 0rem 2rem;
+
+}
+.Share-img-box {
+    display: flex;
+    min-width: 2rem;
+    min-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--L-Gray-Blue);
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
