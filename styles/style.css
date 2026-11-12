@@ -110,9 +110,11 @@ main{
     align-items: center;
     background-color: var(--V-Dark-Gray-Blue);
     padding: 0rem 2rem 0rem 2rem;
+    gap: 1rem;
+    min-height: 4rem;
 
 }
-.Share-img-box {
+.Share-img-box1 {
     display: flex;
     min-width: 2rem;
     min-height: 2rem;
@@ -124,4 +126,30 @@ main{
     justify-content: center;
     margin-left: auto;
 }
+
+.Share-img-box2 {
+    display: flex;
+    min-width: 2rem;
+    min-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--Desat-Dark-Blue);
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.Share-Badge {
+    color: var(--Desat-Dark-Blue);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+
+.B2 {
+    filter: brightness(0) invert(1);
+}
+
+
 
