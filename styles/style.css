@@ -16,7 +16,7 @@ body{
     display: flex;
     background-color: var(--L-Gray-Blue);
     height: 100vh;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     margin: 2rem;
 }
@@ -25,12 +25,13 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--White);
-    overflow: hidden;
     border-radius: 1rem;
 }
 
 .Img-Box {
     width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
 }
 
 .Product-Img {
@@ -44,6 +45,7 @@ main{
     flex-direction: column;
     padding: 2rem;
     gap: 1rem;
+    overflow: visible;
 }
 
 .Description {
@@ -51,13 +53,15 @@ main{
     color: var(--V-Dark-Gray-Blue);
     font-weight: 700;
     margin: 0rem;
-    padding: 0rem 0rem 0rem 0rem;
+    padding: 0rem;
 }
 
 .Paragraph {
     font-size: 0.8125rem;
     color: var(--Desat-Dark-Blue);
     font-weight: 500;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 .Identity-Banner {
@@ -67,7 +71,7 @@ main{
     justify-content: center;
     gap: 1rem;
     height: 4rem;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     gap: 1rem;
 }
 
@@ -89,7 +93,7 @@ main{
 .Name-Date-Box {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
@@ -116,7 +120,7 @@ main{
     background-color: var(--V-Dark-Gray-Blue);
     padding: 0rem 2rem 0rem 2rem;
     gap: 1rem;
-    height: 4rem;
+    height: 5rem;
 
 }
 .Share-img-box1 {
@@ -156,6 +160,87 @@ main{
 .B2 {
     filter: brightness(0) invert(1);
 }
+
+/* Desktop Design Modifications */
+
+@media (min-width: 26.875rem) {
+    main {
+        display: flex;
+        flex-direction: row;
+        max-width: 45.5rem;
+    }
+
+    .Card {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        gap: 0.8rem;
+        position: relative;
+        overflow:visible;
+
+    }
+    
+    .Img-Box {
+        display: flex;
+        flex: 1;
+        min-height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Product-Img {
+        height: 100%;
+        max-height: 80rem;
+    }
+
+    .Description {
+        font-size: clamp(1.25rem, 0.75rem + 5vw, 1.5rem);
+    }
+
+    .Paragraph {
+        font-size: clamp(0.8125rem, 0.75rem + 5vw, 1rem);
+    }
+
+    .B2 {
+        display: none;
+    }
+
+    .Share-img-box2 {
+        display: none;
+    }
+
+    .Share-Banner {
+        display: none;
+        /*display: flex;*/
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 5rem;
+        right: -3.5rem;
+        background-color: var(--V-Dark-Gray-Blue);
+        padding: 0rem 2rem 0rem 2rem;
+        gap: 1rem;
+        height: 4rem;
+        max-height: 2rem;
+        max-width: 15rem;
+        border-radius: 0.5rem;
+
+    }
+
+    .Share-Banner::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid var(--V-Dark-Gray-Blue);
+        position: absolute;
+        bottom: -0.5rem;
+        right: 6rem;
+    }
+}
+
 
 
 
