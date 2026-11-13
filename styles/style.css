@@ -64,6 +64,10 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 4rem;
+    padding: 2rem 2rem 2rem 2rem;
     gap: 1rem;
 }
 
@@ -104,14 +108,15 @@ main{
 }
 
 .Share-Banner {
-    display: flex;
+    display: none;
+    /*display: flex;*/
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: var(--V-Dark-Gray-Blue);
     padding: 0rem 2rem 0rem 2rem;
     gap: 1rem;
-    min-height: 4rem;
+    height: 4rem;
 
 }
 .Share-img-box1 {
@@ -125,6 +130,7 @@ main{
     align-items: center;
     justify-content: center;
     margin-left: auto;
+    border: 0rem;
 }
 
 .Share-img-box2 {
